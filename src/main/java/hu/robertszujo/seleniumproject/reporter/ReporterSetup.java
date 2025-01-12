@@ -9,7 +9,7 @@ import java.time.format.DateTimeFormatter;
 public class ReporterSetup {
 
     private final String reportFolderPath = System.getProperty("user.dir") + File.separator + "target" + File.separator + "reports";
-    private final String reportFileName = "Report_" + LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME) + ".html";
+    private final String reportFileName = "Report_" + LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss")) + ".html";
 
     public ExtentSparkReporter createReporter() {
         //Create report folder first if it does not exist
