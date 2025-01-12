@@ -35,7 +35,7 @@ public class LoanCalculatorTests extends BaseTestClass {
 
     // *** Tests ***
 
-    @Test
+    @Test(description = "Cookie popup should be displayed after page load")
     public void loadCalculatorPage_cookiePopupShouldBeDisplayed() {
         // Given + When
         driver.get(TestConstants.CALCULATOR_PAGE_URL);
